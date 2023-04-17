@@ -1,22 +1,30 @@
-const checkbox = document.getElementById('theme-checkbox');
-if (localStorage.getItem('theme') === 'dark') {
-  checkbox.checked = true;
-}
-
-ref = {
-  body: document.querySelector('body'),
-  header: document.querySelector('.header_btn__shopping'),
-  // newElem: document.querySelector('#seemore__btn'),
-};
-console.log(ref);
-
 export function getObject() {
   ref = {
+    checkbox: document.getElementById('theme-checkbox'),
     body: document.querySelector('body'),
     header: document.querySelector('.header_btn__shopping'),
     // newElem: document.querySelector('#seemore__btn'),
   };
-  console.log(ref);
+  console.log(ref.checkbox);
+
+if (localStorage.getItem('theme') === 'dark') {
+  ref.checkbox.checked = true;
+  ref.body.classList.add('dark');
+}
+
+// Toggle theme on checkbox change
+ref.checkbox.addEventListener('change', () => {
+  if (ref.checkbox.checked) {
+    ref.body.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    ref.body.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+
+
 
   // const object = Object.keys(ref);
   // console.log(object);
