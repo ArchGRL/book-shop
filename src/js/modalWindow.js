@@ -117,7 +117,7 @@ function renderBookInformation() {
       const addButton = document.querySelector('.modal-book__button');
       addButton.addEventListener('click', () => {
         if (booksArray.includes(id)) {
-          let bookIndex = booksArray.indexOf('${data.id}');
+          let bookIndex = booksArray.indexOf(`${data.id}`);
           booksArray.splice(bookIndex, 1);
           stringKey = JSON.stringify(booksArray);
 
