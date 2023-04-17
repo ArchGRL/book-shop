@@ -56,7 +56,7 @@ import { getObject } from './toggle-theme.js';
 // TEST 2 ось JS
 
 import { getBookData } from './getBooksData.js';
-const booksInform = new getBookData((id = '643282b1e85766588626a085'));
+const booksInform = new getBookData();
 let mainTitle = 'Best Sellers Books';
 const imgAttributeAlt = 'book cover photo';
 function renderCategoryList() {
