@@ -10,7 +10,7 @@ localStorage.setItem('id', stringKey)
 
 
 const getLocalstorage = localStorage.getItem('id')
-parseLokalstorage = JSON.parse(getLocalstorage)
+const parseLokalstorage = JSON.parse(getLocalstorage)
 
 
 
