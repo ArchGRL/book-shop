@@ -4,7 +4,7 @@ const shopingListEl = document.querySelector('.shopingList');
 
 const key = ['643282b1e85766588626a080', '643282b1e85766588626a0ba', '643282b1e85766588626a0ba', '643282b1e85766588626a0dc', '643282b2e85766588626a0fc', '643282b2e85766588626a118'];
  
-stringKey = JSON.stringify(key);
+const stringKey = JSON.stringify(key);
 
 localStorage.setItem('id', stringKey)
 

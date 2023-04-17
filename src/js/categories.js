@@ -40,10 +40,11 @@ function getString(e) {
   }
   e.target.classList.add('active');
 
-  const categoryString = createCategoryString(`${data}`);
+  // const categoryString = createCategoryString();
+  // id, (category = `${categoryString}`)
 
   let categoryArray = [];
-  const booksInform = new getBookData(id, (category = `${categoryString}`));
+  const booksInform = new getBookData();
   booksInform
     .getPromCategory()
     .then((books) => {
