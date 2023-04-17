@@ -1,6 +1,6 @@
 import { getBookData } from './getBooksData.js';
 
-const booksInform = new getBookData((id = '643282b1e85766588626a0b4'));
+const booksInform = new getBookData();
 const logoPath = new URL('../images/icons.svg', import.meta.url);
 let addedToShoppingBag = false;
 let booksArray = [];

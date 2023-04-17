@@ -99,7 +99,7 @@ function renderCategoryList() {
    </div>`;
       });
 
-      categoryHtml = categoryArray.join(''); // Join the array of HTML strings into a single string
+      const categoryHtml = categoryArray.join(''); // Join the array of HTML strings into a single string
       categoryList.insertAdjacentHTML('beforeend', categoryHtml); // Insert the HTML code into the ul element
 
       getObject();
